@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.nav {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f880de;
+  color: black;
+  padding: 20px 20px;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.fechas {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #80006e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #f880de;
+  border-radius: 50px;
+  color: black;
+}
+
+/* Articulos */
+.articulos-base {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: hsl(313, 63%, 55%);
+}
+
+.articulos-container {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 10%;
+  padding: 20px 0;
+}
+
+.articulos-container h1 {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: white;
+}
+
+.articulos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.articulo {
+  flex: 1 1 calc(33.333% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: beige;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.articulo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.ver-mas {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #80006e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.ver-mas:hover {
+  background-color: #f880de;
+  color: black;
+}
+
+.articulo.oculto {
+  display: none;
+}
+
+/* Secciones */
+.secciones {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+  background-color: hsl(313, 63%, 55%);
+  color: white;
+  text-align: center;
+}
+
+.secciones h1{
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.categoria {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+.categoria img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.categoria h2 {
+  margin: 10px 0;
+}
+
+.categoria p {
+  font-size: 0.9em;
+}
+
+/* Tamaños de las categorías */
+.categoria-grande {
+  grid-column: span 2;
+}
+
+.categoria-media {
+  grid-column: span 1;
+}
+
+.categoria-pequena {
+  grid-column: span 1;
+}

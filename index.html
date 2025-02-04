@@ -4,8 +4,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Final Touch</title>
+  <!--Styles-->
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  
+  <div class="nav">
+    <header>
+      <h1>Bienvenido a Final Touch!</h1>
+      <div class="fechas">
+          <p>Fecha del sistema: <span id="fecha-sistema"></span></p>
+          <p>Última modificación: <span id="fecha-modificacion"></span></p>
+      </div>
+    </header>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#articulos">Artículos</a>
+      <a href="#secciones">Secciones</a>
+      <a href="#inicio-sesion">Inicio de Sesión</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+  <div class="articulos-base">
+    <div class="articulos-container">
+      <h1>Artículos</h1>
+      <div id="articulos" class="articulos">
+        <div class="articulo">
+          <h2>Artículo 1</h2>
+          <figure>
+            <img src="https://via.placeholder.com/400x200?text=Artículo+1" alt="Artículo 1">
+            <figcaption>Esta es la leyenda del Artículo 1.</figcaption>
+          </figure>
+          <p>Este es el contenido del artículo 1.</p>
+        </div>
+        <div class="articulo">
+          <h2>Artículo 2</h2>
+          <figure>
+            <img src="https://via.placeholder.com/400x200?text=Artículo+2" alt="Artículo 2">
+            <figcaption>Esta es la leyenda del Artículo 2.</figcaption>
+          </figure>
+          <p>Este es el contenido del artículo 2.</p>
+        </div>
+        <div class="articulo">
+          <h2>Artículo 3</h2>
+          <figure>
+            <img src="https://via.placeholder.com/400x200?text=Artículo+3" alt="Artículo 3">
+            <figcaption>Esta es la leyenda del Artículo 3.</figcaption>
+          </figure>
+          <p>Este es el contenido del artículo 3.</p>
+        </div>
+        <!-- Artículos adicionales (ocultos inicialmente) -->
+        <div class="articulo oculto">
+          <h2>Artículo 4</h2>
+          <figure>
+            <img src="https://via.placeholder.com/400x200?text=Artículo+4" alt="Artículo 4">
+            <figcaption>Esta es la leyenda del Artículo 4.</figcaption>
+          </figure>
+          <p>Este es el contenido del artículo 4.</p>
+        </div>
+        <div class="articulo oculto">
+          <h2>Artículo 5</h2>
+          <figure>
+            <img src="https://via.placeholder.com/400x200?text=Artículo+5" alt="Artículo 5">
+            <figcaption>Esta es la leyenda del Artículo 5.</figcaption>
+          </figure>
+          <p>Este es el contenido del artículo 5.</p>
+        </div>
+        <div class="articulo oculto">
+          <h2>Artículo 6</h2>
+          <figure>
+            <img src="https://via.placeholder.com/400x200?text=Artículo+6" alt="Artículo 6">
+            <figcaption>Esta es la leyenda del Artículo 6.</figcaption>
+          </figure>
+          <p>Este es el contenido del artículo 6.</p>
+        </div>
+      </div>
+      <button id="ver-mas" class="ver-mas">Ver más</button>
+    </div>
+  </div>
+  <!-- Secciones de Categorías -->
+  <div class="secciones">
+    <h1>Categorías de Maquillaje</h1>
+    <div class="categorias-grid">
+      <div class="categoria categoria-grande">
+        <figure>
+          <img src="https://via.placeholder.com/600x400?text=Base" alt="Base de Maquillaje">
+          <figcaption>Base de Maquillaje</figcaption>
+        </figure>
+        <h2>Base</h2>
+        <p>Encuentra la base perfecta para tu piel.</p>
+      </div>
+      <div class="categoria categoria-pequena">
+        <figure>
+          <img src="https://via.placeholder.com/300x200?text=Labios" alt="Labios">
+          <figcaption>Labios</figcaption>
+        </figure>
+        <h2>Labios</h2>
+        <p>Descubre los mejores labiales y brillos.</p>
+      </div>
+      <div class="categoria categoria-pequena">
+        <figure>
+          <img src="https://via.placeholder.com/300x200?text=Ojos" alt="Ojos">
+          <figcaption>Ojos</figcaption>
+        </figure>
+        <h2>Ojos</h2>
+        <p>Todo para resaltar tu mirada.</p>
+      </div>
+      <div class="categoria categoria-media">
+        <figure>
+          <img src="https://via.placeholder.com/400x300?text=Sombras" alt="Sombras">
+          <figcaption>Sombras</figcaption>
+        </figure>
+        <h2>Sombras</h2>
+        <p>Amplia gama de sombras para tus ojos.</p>
+      </div>
+      <div class="categoria categoria-media">
+        <figure>
+          <img src="https://via.placeholder.com/400x300?text=Maquillaje+Facial" alt="Maquillaje Facial">
+          <figcaption>Maquillaje Facial</figcaption>
+        </figure>
+        <h2>Maquillaje Facial</h2>
+        <p>Todo lo que necesitas para un acabado perfecto.</p>
+      </div>
+      <div class="categoria categoria-grande">
+        <figure>
+          <img src="https://via.placeholder.com/600x400?text=Accesorios" alt="Accesorios">
+          <figcaption>Accesorios</figcaption>
+        </figure>
+        <h2>Accesorios</h2>
+        <p>Brochas, esponjas y más para tu rutina.</p>
+      </div>
+    </div>
+  </div>
+  <script src="/main.js"></script>
 </body>
 </html>
